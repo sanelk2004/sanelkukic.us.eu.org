@@ -59,7 +59,7 @@ You can also fill out the contact form below.
     Your message:
     <textarea name="message" required></textarea>
   </label>
-  <div class="g-recaptcha" data-sitekey="6LfJCkQcAAAAAHCMG_Hv37VjHtSlynlGlgwaCUDm"></div>
+  <div class="g-recaptcha" data-sitekey="6LfIEkQcAAAAAFK2XLut5G_ir8Dfb2wNbG0S4Osp"></div>
   <button type="submit">Send</button>
 </form>
 {{< /rawhtml >}}
