@@ -21,21 +21,45 @@ If you wish to contact me, below are the various methods you can do so:
 You can also fill out the contact form below.
 
 {{< rawhtml >}}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  window.onload = function() {
+    var el = document.getElementById('g-recaptcha-response');
+    if (el) {
+      el.setAttribute('required', 'required');
+    }
+  }
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+</script>
+<style>
+  #g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -50px 0 0 0 !important;
+    z-index: -999999;
+    opacity: 0;
+  }
+</style>
 <form
   action="https://formspree.io/f/xnqllbnw"
   method="POST">
   <label>
     Your name:
-    <input type="text" name="name">
+    <input type="text" name="name" required>
   </label>
   <label>
     Your email:
-    <input type="email" name="_replyto">
+    <input type="email" name="_replyto" required>
   </label>
   <label>
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" required></textarea>
   </label>
+  <div class="g-recaptcha" data-sitekey="6LfJCkQcAAAAAHCMG_Hv37VjHtSlynlGlgwaCUDm"></div>
   <button type="submit">Send</button>
 </form>
 {{< /rawhtml >}}
