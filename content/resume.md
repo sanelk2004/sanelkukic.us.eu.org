@@ -11,5 +11,8 @@ You can click the link below to download a PDF copy of my résumé. **Please not
 {{< rawhtml >}}
 <button href="#" onclick="window.location.href = 'https://sanelkukic.us.eu.org/sanel_resume.pdf';">Download my resume (.PDF)</button>
 <br>
+<br>
 <button href="#" onclick="window.location.href = 'https://linkedin.com/in/sanelkukic';">View my LinkedIn profile</button>
+<br>
+<br>
 {{< /rawhtml >}}
