@@ -90,10 +90,16 @@ preserveTaxonomyNames = true
     weight = 60
 
   [[menu.main]]
+    identifier = "tools"
+    name = "Tools"
+    url = "https://tools.sanelkukic.us.eu.org"
+    weight = 70
+
+  [[menu.main]]
     identifier = "contact"
     name = "Contact Me"
     url = "/contact"
-    weight = 70
+    weight = 80
 
 [taxonomies]
 category = "categories"
