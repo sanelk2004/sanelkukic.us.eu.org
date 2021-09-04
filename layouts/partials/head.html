@@ -1,0 +1,21 @@
+<head>
+    <title>{{ .Site.Title }}</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000084" />
+    <link rel="icon" href="{{ .Site.BaseURL }}/favicon.ico">
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
+    <meta name="description" content="{{ .Site.Params.mainpagedesc }}"/>
+    <meta property="og:title" content="{{ .Site.Title }}"/>
+    <meta property="og:description" content="{{ .Site.Params.mainpagedesc }}"/>
+    <meta property="og:url" content="{{ .Site.BaseURL }}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image" content=" {{ .Site.BaseURL }}/favicon.ico"/>
+    <meta property="og:image:alt" content="Site Favicon"/>
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4c39411aa25f49958ba30182293a0443"}'></script><!-- End Cloudflare Web Analytics -->
+    {{/* Don't ask why it's like this. This original theme is a mess... */}}
+    <!-- <noscript><style>body { visibility: visible }</style></noscript> -->
+</head>

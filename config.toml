@@ -1,0 +1,128 @@
+baseURL = "https://sanelkukic.us.eu.org"
+title = "Sanel Kukic"
+languageCode = "en"
+DefaultContentLanguage = "en" # Change this to change the site's language
+theme = "hugo.386"
+preserveTaxonomyNames = true
+
+[params]
+    # The name to display as main title in the home page
+    mainpagetitle = "SANEL KUKIC"
+
+    # The subtitle to display under the title in the home page
+    mainpagesubtitle = "Welcome to my personal website!"
+
+    # The description of your website. It will be displayed in the home page
+    mainpagedesc = "I'm a 17-year old interested in software development, blockchain, and artificial intelligence/machine learning."
+
+    # The name to display in the copyright section in the footer
+    copyrightname = "Sanel Kukic"
+
+    # The url to use as link in the copyright name in the footer. Leave empty to use none.
+    copyrighturl = "https://github.com/sanelk2004/sanelkukic.us.eu.org/blob/main/LICENSE"
+
+    # Show the "built on Hugo" disclaimer
+    showhugo = false
+
+    # Urls for social networks
+    facebook = "https://facebook.com/ksanel69"
+    twitter = "https://twitter.com/idkhow_to_read"
+    #linkedin = "https://linkedin.com"
+    github = "https://github.com/sanelk2004"
+
+    # Enables or disables the loading animations. false activates them. Default is false.
+    loadfastload = false
+
+    # Sets the speed for the page loading effect. Default is 1.0.
+    loadspeedfactor = 1.0
+
+    # Enables or disables the second flyby cursor. Default is false.
+    loadonepass = false
+
+[params.copyright]
+    name = "Sanel Kukic"
+
+    # The url to use as link in the copyright name in the footer. Leave empty to use none.
+    url = "https://github.com/sanelk2004/sanelkukic.us.eu.org/blob/main/LICENSE"
+
+    # Text to go before copyright information
+    prefix = "[Open-source](https://github.com/sanelk2004/sanelkukic.us.eu.org) & made with ♥"
+
+    # Text to go between copyright and hugo disclaimer (if enabled)
+    suffix = "All Rights Reserved."
+
+[menu]
+  # This displays buttons in the navbar to access your contents
+  [[menu.main]]
+    identifier = "about" # An unique identifier for the button
+    name = "About"       # A display name for the button
+    url = "/about/"      # The path to the content. It can lead to a single page (like here)
+    weight = 10          # A number to order the buttons in the navbar
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "All posts"
+    url = "/post/"       # The path can lead to a content folder too.
+    weight = 20
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "gaming"
+    name = "Gaming"
+    url = "/gaming"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    url = "/resume"
+    weight = 60
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact Me"
+    url = "/contact"
+    weight = 70
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
