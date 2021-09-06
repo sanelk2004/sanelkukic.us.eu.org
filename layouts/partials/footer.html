@@ -1,0 +1,16 @@
+<footer class="container">
+    <hr class="soften">
+    <p>
+        {{- partial "copyright.html" . -}}
+    </p>
+    <p class="text-center">
+        {{ with .Site.Params.facebook }}<a href="{{ . }}">Facebook</a> {{ end }}
+        {{ with .Site.Params.twitter }}<a href="{{ . }}">Twitter</a> {{ end }}
+        {{ with .Site.Params.linkedin }}<a href="{{ . }}">Linkedin</a> {{ end }}
+        {{ with .Site.Params.github }}<a href="{{ . }}">GitHub</a> {{ end }}
+        {{ with .Site.Params.gitlab }}<a href="{{ . }}">GitLab</a>{{ end }}
+    </p>
+    <br>
+    <a href="https://www.eff.org/pages/blue-ribbon-campaign"><img src="https://www.eff.org/files/br.gif" width="100" height="100" alt="Join the Blue Ribbon Online Free Speech Campaign"></a>
+    <a href="https://supporters.eff.org/donate/join-eff-4"><img src="https://www.eff.org/sites/default/files/coders-join.png" width="100" height="100" style="max-height: 100px;" alt="Support Coders' Rights With EFF!" border="0"></a><br>
+</footer>
