@@ -19,9 +19,16 @@ If you wish to contact me, below are the various methods you can do so:
   - [@sanelk2004](https://instagram.com/sanelk2004)
 - XMPP
   - [ksanel@og.im](xmpp:ksanel@og.im?message)
+  - Join my room: [sanel.kukic@conference.og.im?join](xmpp:sanel.kukic@conference.og.im?join)
   - My OTR (Off-the-Record) encryption fingerprint: `88A7607F ED545A35 B2264CF8 88E2F7AC C9DA29A2`
   - My OMEMO encryption fingerprint: `136d12fe 3e8844a4 e8d3a70b 1b2090b1 2bfe0a1d 622889f4 71495230 4b0cef73`
   - As long as either of these two fingerprints are present, you can be assured that you are actually talking to me and that the conversation is end-to-end encrypted.
+- Matrix
+  - [@sanel.k:halogen.city](https://matrix.to/#/@sanel.k:halogen.city)
+  - Join my room: [#sanel.kukic:halogen.city](https://matrix.to/#/#sanel.kukic:halogen.city)
+  - You can download a Matrix client such as [Element](https://element.io) to message me on Matrix.
+  - Please note that the Matrix chatroom is not encrypted because enabling encryption would break compatibility with bots and widgets. If you wish to communicate with me in an encrypted fashion, it is recommended that you do so via the XMPP chatroom with either OTR or OMEMO enabled.
+
 
 You can also fill out the contact form below.
 
