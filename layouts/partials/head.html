@@ -1,16 +1,16 @@
 <head>
-    <title>{{ .Site.Title }}</title>
+    <title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }} {{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="utf-8" http-equiv="encoding">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
     <meta name="theme-color" content="#000084" />
     <link rel="icon" href="{{ .Site.BaseURL }}/favicon.ico">
-    <link rel="canonical" href="{{ .Site.BaseURL }}">
-    <meta name="description" content="{{ .Site.Params.mainpagedesc }}"/>
-    <meta property="og:title" content="{{ .Site.Title }}"/>
-    <meta property="og:description" content="{{ .Site.Params.mainpagedesc }}"/>
-    <meta property="og:url" content="{{ .Site.BaseURL }}"/>
+    <link rel="canonical" href="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ if .Page.Permalink }}{{ .Page.Permalink }}{{end}}{{end}}">
+    <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.mainpagedesc }}{{ else }}{{ if .Page.Description }}{{ .Page.Description }}{{ end }}{{ end }}"/>
+    <meta property="og:title" content="{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }} {{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}"/>
+    <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.mainpagedesc }}{{ else }}{{ if .Page.Description }}{{ .Page.Description }}{{ end }}{{ end }}"/>
+    <meta property="og:url" content="{{ if .IsHome }}{{ .Site.BaseURL }}{{ else }}{{ if .Page.Permalink }}{{ .Page.Permalink }}{{end}}{{end}}"/>
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:image" content=" {{ .Site.BaseURL }}/favicon.ico"/>
