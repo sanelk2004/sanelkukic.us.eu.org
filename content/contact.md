@@ -30,7 +30,8 @@ If you wish to contact me, below are the various methods you can do so:
   - Join my room: [#sanel.kukic:halogen.city](https://matrix.to/#/#sanel.kukic:halogen.city)
   - You can download a Matrix client such as [Element](https://element.io) to message me on Matrix.
   - Please note that the Matrix chatroom is not encrypted because enabling encryption would break compatibility with bots and widgets. If you wish to communicate with me in an encrypted fashion, it is recommended that you do so via the XMPP chatroom with either OTR or OMEMO enabled.
-
+- Mastodon
+  - [@sanelkukic@im-in.space](https://im-in.space/@sanelkukic)
 
 You can also fill out the contact form below.
 

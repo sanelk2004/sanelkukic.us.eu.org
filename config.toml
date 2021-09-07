@@ -27,8 +27,9 @@ preserveTaxonomyNames = true
     # Urls for social networks
     facebook = "https://facebook.com/ksanel69"
     twitter = "https://twitter.com/idkhow_to_read"
-    #linkedin = "https://linkedin.com"
+    linkedin = "https://linkedin.com/in/sanelkukic"
     github = "https://github.com/sanelk2004"
+    mastodon = "https://im-in.space/@sanelkukic"
 
     # Enables or disables the loading animations. false activates them. Default is false.
     loadfastload = false
