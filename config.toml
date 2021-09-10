@@ -73,40 +73,34 @@ preserveTaxonomyNames = true
     weight = 30
 
   [[menu.main]]
-    identifier = "portfolio"
-    name = "Portfolio"
-    url = "/portfolio"
-    weight = 40
-
-  [[menu.main]]
     identifier = "discord"
     name = "Discord"
     url = "/discord"
-    weight = 50
+    weight = 40
 
   [[menu.main]]
     identifier = "gaming"
     name = "Gaming"
     url = "/gaming"
-    weight = 60
+    weight = 50
 
   [[menu.main]]
     identifier = "resume"
     name = "Resume"
     url = "/resume"
-    weight = 70
+    weight = 60
 
   [[menu.main]]
     identifier = "tools"
     name = "Tools"
     url = "https://tools.sanelkukic.us.eu.org"
-    weight = 80
+    weight = 70
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact Me"
     url = "/contact"
-    weight = 90
+    weight = 80
 
 [taxonomies]
 category = "categories"
@@ -139,3 +133,6 @@ tag = "tags"
 
   [services.twitter]
     disableInlineCSS = true
+
+[easteregg]
+  egg = "RUdHezYwNmRjMWM3LTFmNzktNGFiMC05ZDExLWU1ZTdkZWNkZGYwYX0"
