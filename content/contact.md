@@ -32,6 +32,8 @@ If you wish to contact me, below are the various methods you can do so:
   - Please note that the Matrix chatroom is not encrypted because enabling encryption would break compatibility with bots and widgets. If you wish to communicate with me in an encrypted fashion, it is recommended that you do so via the XMPP chatroom with either OTR or OMEMO enabled.
 - Mastodon
   - [@sanelkukic@im-in.space](https://im-in.space/@sanelkukic)
+- Hacker News
+  - [sanelkukic](https://news.ycombinator.com/user?id=sanelkukic)
 
 You can also fill out the contact form below.
 
