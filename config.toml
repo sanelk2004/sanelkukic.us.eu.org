@@ -30,6 +30,7 @@ preserveTaxonomyNames = true
     linkedin = "https://linkedin.com/in/sanelkukic"
     github = "https://github.com/sanelk2004"
     mastodon = "https://im-in.space/@sanelkukic"
+    hackernews = "https://news.ycombinator.com/user?id=sanelkukic"
 
     # Enables or disables the loading animations. false activates them. Default is false.
     loadfastload = false
