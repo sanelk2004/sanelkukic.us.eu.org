@@ -78,30 +78,36 @@ preserveTaxonomyNames = true
     name = "Discord"
     url = "/discord"
     weight = 40
+  
+  [[menu.main]]
+    identifier = "cats"
+    name = "My Pet Cats"
+    url = "https://cats.sanelkukic.us.eu.org"
+    weight = 50
 
   [[menu.main]]
     identifier = "gaming"
     name = "Gaming"
     url = "/gaming"
-    weight = 50
+    weight = 60
 
   [[menu.main]]
     identifier = "resume"
     name = "Resume"
     url = "/resume"
-    weight = 60
+    weight = 70
 
   [[menu.main]]
     identifier = "tools"
     name = "Tools"
     url = "https://tools.sanelkukic.us.eu.org"
-    weight = 70
+    weight = 80
 
   [[menu.main]]
     identifier = "contact"
     name = "Contact Me"
     url = "/contact"
-    weight = 80
+    weight = 90
 
 [taxonomies]
 category = "categories"
