@@ -108,6 +108,12 @@ preserveTaxonomyNames = true
     name = "Contact Me"
     url = "/contact"
     weight = 90
+  
+  [[menu.main]]
+    identifier = "support"
+    name = "Support Me"
+    url = "/support"
+    weight = 100
 
 [taxonomies]
 category = "categories"
