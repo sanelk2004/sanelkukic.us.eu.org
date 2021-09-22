@@ -22,6 +22,10 @@ iframe.contentWindow.document.body.style.backgroundColor = 'white';
 </script>
 <br>
 <br>
+<script src="https://liberapay.com/sanelkukic/widgets/button.js"></script>
+<noscript><a href="https://liberapay.com/sanelkukic/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+<br>
+<br>
 {{< /rawhtml >}}
 
 - My Ethereum wallet address:
