@@ -1,0 +1,53 @@
+.txt-white {
+    color: white !important;
+}
+
+.sticky-footer {
+    padding-top: 50vh;
+}
+
+.sticky-footer-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.homepage-icon {
+    padding-right: 1vw;
+}
+
+hr {
+    color: white;
+}
+
+body {
+    background: linear-gradient(270deg, #246655, #08ccea, #64ea08, #a008ea, #b0ea08);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradientBackground 30s ease infinite;
+    -moz-animation: gradientBackground 30s ease infinite;
+    -o-animation: gradientBackground 30s ease infinite;
+    animation: gradientBackground 30s ease infinite;
+}
+
+@-webkit-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
