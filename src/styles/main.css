@@ -1,0 +1,77 @@
+.txt-white, hr, tr, th, td, h1, p {
+    color: white !important;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    color: white !important;
+}
+
+a {
+    padding-right: 1vw;
+    color: white !important;
+}
+
+.dark-text-color {
+    color: gray !important;
+}
+
+.pdf-modal {
+    width: 45vw;
+    max-width: 45vw;
+}
+
+.custom-tabs-color {
+    margin-right: 1vw;
+    background-color: gray !important;
+    color: white !important;
+}
+
+.custom-tabs-color.active {
+    background-color: black !important;
+    border-bottom-color: transparent;
+}
+
+.sticky-footer {
+    padding-top: 30vh;
+}
+
+.buymeacoffee-embed {
+    height: 60px !important;
+    width: 217px !important;
+}
+
+.homepage-icon {
+    padding-right: 1vw;
+}
+
+body {
+    background: linear-gradient(270deg, #246655, #08ccea, #64ea08, #a008ea, #b0ea08);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradientBackground 30s ease infinite;
+    -moz-animation: gradientBackground 30s ease infinite;
+    -o-animation: gradientBackground 30s ease infinite;
+    animation: gradientBackground 30s ease infinite;
+}
+
+@-webkit-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
