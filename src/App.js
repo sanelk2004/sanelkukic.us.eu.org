@@ -83,7 +83,7 @@ function App() {
       </Switch>
       <Container>
         <footer>
-          <p className="txt-white sticky-footer">&copy; 2021 Sanel Kukic. All rights reserved.</p>
+          <p className="txt-white sticky-footer">&copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
         </footer>
       </Container>
     </>

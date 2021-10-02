@@ -1,24 +1,38 @@
-.txt-white {
+.txt-white, hr, tr, th, td, h1, p {
     color: white !important;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    color: white !important;
+}
+
+a {
+    padding-right: 1vw;
+    color: white !important;
+}
+
+.dark-text-color {
+    color: gray !important;
+}
+
+.custom-tabs-color {
+    margin-right: 1vw;
+    background-color: gray !important;
+    color: white !important;
+}
+
+.custom-tabs-color.active {
+    background-color: black !important;
+    border-bottom-color: transparent;
 }
 
 .sticky-footer {
     padding-top: 50vh;
 }
 
-.sticky-footer-line {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 .homepage-icon {
     padding-right: 1vw;
-}
-
-hr {
-    color: white;
 }
 
 body {
