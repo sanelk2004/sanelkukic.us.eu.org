@@ -13,6 +13,7 @@ import ContactPage from './pages/ContactPage';
 import SupportPage from './pages/SupportPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -78,6 +79,11 @@ function App() {
         <Route exact path="/" render={(props) => (
           <Page title="Home">
             <HomePage {...props}/>
+          </Page>
+        )}/>
+        <Route path="*" render={(props) => (
+          <Page title="404 Not Found">
+            <NotFoundPage {...props}/>
           </Page>
         )}/>
       </Switch>

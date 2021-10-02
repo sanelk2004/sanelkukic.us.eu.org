@@ -13,6 +13,8 @@ import {
     faDev
 } from '@fortawesome/free-brands-svg-icons';
 
+import Carbonbadge from 'react-carbonbadge';
+
 const HomePage = (props) => {
     return (
         <Container className="mt-3">
@@ -26,7 +28,8 @@ const HomePage = (props) => {
             <a href="https://im-in.space/@sanelkukic" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faMastodon}/></a>
             <a href="https://steamcommunity.com/id/idk_how_to_read" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faSteam}/></a>
             <a href="https://discord.gg/NSVPhwn9rG" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDiscord}/></a>
-            <a href="https://dev.to/sanelk2004" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDev}/></a> 
+            <a href="https://dev.to/sanelk2004" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDev}/></a>
+            <Carbonbadge darkMode={false}/>
         </Container>
     )
 }

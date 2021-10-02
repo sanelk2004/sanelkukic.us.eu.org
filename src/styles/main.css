@@ -16,6 +16,11 @@ a {
     color: gray !important;
 }
 
+.pdf-modal {
+    width: 45vw;
+    max-width: 45vw;
+}
+
 .custom-tabs-color {
     margin-right: 1vw;
     background-color: gray !important;
@@ -28,7 +33,12 @@ a {
 }
 
 .sticky-footer {
-    padding-top: 50vh;
+    padding-top: 30vh;
+}
+
+.buymeacoffee-embed {
+    height: 60px !important;
+    width: 217px !important;
 }
 
 .homepage-icon {
