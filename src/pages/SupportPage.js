@@ -25,7 +25,7 @@ const SupportPage = () => {
                 <Tab tabClassName="custom-tabs-color" eventKey="github" title={<React.Fragment><FontAwesomeIcon icon={faGithub}/> GitHub Sponsors</React.Fragment>}>
                     <p>You can use GitHub Sponsors to help support me financially, just click the button below to be taken to my GitHub Sponsors page.</p>
                     <p>If you do not see a button below, make sure you don't have an adblocker turned on.</p>
-                    <iframe src="https://github.com/sponsors/sanelk2004/card" title="Sponsor sanelk2004" height="225" width="600" style={{ border: '0', background: '#ffffff' }}></iframe>
+                    <iframe src="https://github.com/sponsors/sanelk2004/button" title="Sponsor sanelk2004" height="35" width="116" style={{ border: '0' }}></iframe>
                 </Tab>
                 <Tab tabClassName="custom-tabs-color" eventKey="liberapay" title={<React.Fragment><FontAwesomeIcon icon={faDonate}/> Liberapay</React.Fragment>}>
                     <p>You can use Liberapay to help support me financially, just click the button below to be taken to my Liberapay page.</p>
