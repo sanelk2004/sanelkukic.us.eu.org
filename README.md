@@ -2,7 +2,9 @@
 Version 2.0 rewrite of my personal website made using React.js, react-bootstrap, and react-router-dom!
 
 ## View the live version
-[Click here](https://sanelkukic.us.eu.org) to view the live version of the website.
+You can access my website through any of the following URLs:
+- [sanelkukic.us.eu.org](https://sanelkukic.us.eu.org)
+- [sanelkukic.is-a.dev](https://sanelkukic.is-a.dev)
 
 ## What technologies does this use?
 - React.js
