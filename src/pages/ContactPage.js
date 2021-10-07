@@ -137,7 +137,7 @@ sPBaBwqxr0Zjx8jP1ArYKj3ziEYi7kQ=
                 </Tab>
                 <Tab tabClassName="custom-tabs-color" eventKey="discord" title={<React.Fragment><FontAwesomeIcon icon={faDiscord}/> Discord</React.Fragment>}>
                     <ul>
-                        <li>Discord username: <pre>idk_how_to_read#9622</pre></li>
+                        <li><a href="https://discord.com/users/588852269177372685" target="_blank" rel="noreferrer"><img src="https://lanyard-profile-readme.vercel.app/api/588852269177372685?theme=dark" alt="Discord Presence"/></a></li>
                         <li>
                             <Button variant="dark" href="https://discord.gg/NSVPhwn9rG">Join the Discord server!</Button>
                         </li>
