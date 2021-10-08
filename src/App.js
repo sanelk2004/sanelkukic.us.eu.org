@@ -102,7 +102,7 @@ function App() {
       </TransitionGroup>
       <Container>
         <footer>
-          <p className="txt-white sticky-footer">&copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
+          <p className="txt-white sticky-footer">Made with 💖 <a href="./humans.txt">by Sanel Kukic</a> All content &copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
           <br/>
           <CookieConsent
             debug={is_debug}
