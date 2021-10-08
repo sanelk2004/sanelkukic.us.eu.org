@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Tab, Tabs, Button, Modal } from 'react-bootstrap';
+import { Container, Tab, Tabs, Button, Modal, Alert } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faMastodon, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -73,10 +73,17 @@ sPBaBwqxr0Zjx8jP1ArYKj3ziEYi7kQ=
                         <li><a href="mailto:sk@sanelkukic.us.eu.org">sk [at] sanelkukic [dot] us [dot] eu [dot] org</a></li>
                     </ul>
                     <br/>
-                    <p><b>PLEASE NOTE:</b> I do <b>NOT</b> send emails from the second address listed above. I only send emails from the first one, and all emails I send are signed using S/MIME. <b>If you receive an email from the first address above that was NOT signed using S/MIME, please forward it to me as soon as possible through any of the contact methods on this website.</b></p>
+                    <Alert variant="danger">
+                        <Alert.Heading>Warning</Alert.Heading>
+                        I do <b>NOT</b> send emails from the second address listed above. I only send emails from my iCloud email address, and all emails I send are signed using my S/MIME certificate. If you receive an email from either of these two addresses that is not signed using S/MIME, please report it to me as soon as possible. Thank you.
+                    </Alert>
                     <br/>
-                    <p>Also, please note that if you are sending me sensitive information via email, I strongly encourage you to encrypt it using PGP. You can click the button below to view my PGP key.</p>
-                    <Button variant="dark" onClick={handleShow}><FontAwesomeIcon icon={faKey}/> View my PGP key</Button>
+                    <Alert variant="warning">
+                        <Alert.Heading>If you wish to send me sensitive information...</Alert.Heading>
+                        If you wish to send me sensitive information via email, I <b>strongly</b> recommend that you encrypt your email message using PGP. You can click the button below to view my PGP public key.
+                        <hr/>
+                        <Button variant="dark" onClick={handleShow}><FontAwesomeIcon icon={faKey}/> View my PGP key</Button>
+                    </Alert>
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
                             <Modal.Title>My PGP public key</Modal.Title>

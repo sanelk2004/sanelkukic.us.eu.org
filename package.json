@@ -19,6 +19,7 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-carbonbadge": "^1.0.1",
+    "react-cookie-consent": "^6.4.1",
     "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
     "react-pdf": "^5.4.0",

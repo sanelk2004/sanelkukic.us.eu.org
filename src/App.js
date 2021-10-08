@@ -1,7 +1,7 @@
 import { Switch, Route, Link, Redirect, useLocation } from 'react-router-dom';
 
 // import components
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, Alert } from 'react-bootstrap';
 import Page from './Page';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -16,10 +16,17 @@ import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
 import NotFoundPage from './pages/NotFoundPage';
 
+import CookieConsent from 'react-cookie-consent';
+
 function App() {
   const location = useLocation();
+  const is_debug = process.env.NODE_ENV !== 'production';
   return (
     <>
+      {
+        is_debug &&
+        <Alert variant="danger"><Alert.Heading>Debug Mode</Alert.Heading>This is a <b>debug</b> build and should not be run in a production environment.</Alert>
+      }
       <Container fluid>
       <Navbar expand="lg">
         <Container>
@@ -96,6 +103,14 @@ function App() {
       <Container>
         <footer>
           <p className="txt-white sticky-footer">&copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
+          <br/>
+          <CookieConsent
+            debug={is_debug}
+            ButtonComponent={Button}
+            location="bottom"
+            overlay>
+            My website uses cookies to enhance your user experience. <a href="https://www.allaboutcookies.org/cookies/" target="_blank" rel="noreferrer">Learn more</a>
+          </CookieConsent>
         </footer>
       </Container>
     </>

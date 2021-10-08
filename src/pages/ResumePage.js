@@ -1,4 +1,4 @@
-import { Container, Button, Modal } from 'react-bootstrap';
+import { Container, Button, Modal, Badge } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -46,13 +46,13 @@ const ResumePage = () => {
             <h1>Résumé</h1>
             <hr/>
             <p>Below you can view my résumé and download it if you wish. You can also click the icon below to view my LinkedIn profile, which has much more detailed information about me and my work.</p>
-            <Button variant="dark" onClick={handleShow}>View my résumé</Button>
+            <Button variant="dark" onClick={handleShow}>View my résumé <Badge pill bg="info">BETA</Badge></Button>
             <br/>
             <br/>
             <Button variant="dark" href="https://linkedin.com/in/sanelkukic"><FontAwesomeIcon icon={faLinkedin}/> View my LinkedIn profile</Button>
             <Modal dialogClassName="pdf-modal" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>My résumé</Modal.Title>
+                    <Modal.Title>View My Résumé <Badge pill bg="info">BETA</Badge></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Document file="./sanel_resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
