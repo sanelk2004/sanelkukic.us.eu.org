@@ -1,8 +1,9 @@
-import { Switch, Route, Link, Redirect } from 'react-router-dom';
+import { Switch, Route, Link, Redirect, useLocation } from 'react-router-dom';
 
 // import components
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import Page from './Page';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 // import styles
 import './styles/main.css';
@@ -16,6 +17,7 @@ import ResumePage from './pages/ResumePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
+  const location = useLocation();
   return (
     <>
       <Container fluid>
@@ -37,56 +39,60 @@ function App() {
           </Container>
         </Navbar>
       </Container>
-      <Switch>
-        <Route exact path="/about-me">
-          <Redirect to="/"/>
-        </Route>
-        <Route exact path="/support-me">
-          <Redirect to="/support"/>
-        </Route>
-        <Route exact path="/contact-me">
-          <Redirect to="/contact"/>
-        </Route>
-        <Route exact path="/cv">
-          <Redirect to="/projects"/>
-        </Route>
-        <Route exact path="/about">
-          <Redirect to="/"/>
-        </Route>
-        <Route exact path="/portfolio">
-          <Redirect to="/projects"/>
-        </Route>
-        <Route exact path="/projects" render={(props) => (
-          <Page title="Projects">
-            <ProjectsPage {...props}/>
-          </Page>
-        )}/>
-        <Route exact path="/contact" render={(props) => (
-          <Page title="Contact Me">
-            <ContactPage {...props}/>
-          </Page>
-        )}/>
-        <Route exact path="/support" render={(props) => (
-          <Page title="Support Me">
-            <SupportPage {...props}/>
-          </Page>
-        )}/>
-        <Route exact path="/resume" render={(props) => (
-          <Page title="Resume">
-            <ResumePage {...props}/>
-          </Page>
-        )}/>
-        <Route exact path="/" render={(props) => (
-          <Page title="Home">
-            <HomePage {...props}/>
-          </Page>
-        )}/>
-        <Route path="*" render={(props) => (
-          <Page title="404 Not Found">
-            <NotFoundPage {...props}/>
-          </Page>
-        )}/>
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition timeout={300} classNames="fade" key={location.key}>
+          <Switch location={location}>
+            <Route exact path="/about-me">
+              <Redirect to="/"/>
+            </Route>
+            <Route exact path="/support-me">
+              <Redirect to="/support"/>
+            </Route>
+            <Route exact path="/contact-me">
+              <Redirect to="/contact"/>
+            </Route>
+            <Route exact path="/cv">
+              <Redirect to="/projects"/>
+            </Route>
+            <Route exact path="/about">
+              <Redirect to="/"/>
+            </Route>
+            <Route exact path="/portfolio">
+              <Redirect to="/projects"/>
+            </Route>
+            <Route exact path="/projects" render={(props) => (
+              <Page title="Projects">
+                <ProjectsPage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/contact" render={(props) => (
+              <Page title="Contact Me">
+                <ContactPage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/support" render={(props) => (
+              <Page title="Support Me">
+                <SupportPage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/resume" render={(props) => (
+              <Page title="Resume">
+                <ResumePage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/" render={(props) => (
+              <Page title="Home">
+                <HomePage {...props}/>
+              </Page>
+            )}/>
+            <Route path="*" render={(props) => (
+              <Page title="404 Not Found">
+                <NotFoundPage {...props}/>
+              </Page>
+            )}/>
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
       <Container>
         <footer>
           <p className="txt-white sticky-footer">&copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
