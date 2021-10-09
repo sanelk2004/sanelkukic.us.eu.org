@@ -15,8 +15,7 @@ const NASAPhoto = () => {
         }
     }, []);
 
-    if (!photoData) return <p>Sorry, looks like I couldn't connect to NASA's API. Try again later ;(</p>
-    console.log(photoData);
+    if (!photoData) return <p className="dark-text-color">Sorry, looks like I couldn't connect to NASA's API. Try again later ;(</p>
 
     return (
         <React.Fragment>
