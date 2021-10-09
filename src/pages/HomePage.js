@@ -19,7 +19,7 @@ import Carbonbadge from 'react-carbonbadge';
 const HomePage = (props) => {
     return (
         <Container className="mt-3">
-            <h1>Welcome to my website!</h1>
+            <h1>Hi, I'm a software developer</h1>
             <hr/>
             <p>Hey there! Welcome to my official website! My name is Sanel Kukic, I'm a 17 year old software developer from Florida. I like to code in JavaScript, Python, C#, and Java, and I occasionally do web development every now and then. Why don't you go ahead and browse this site a little? :D</p>
             <a href="https://github.com/sanelk2004" target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faGithub}/></a>

@@ -19,8 +19,11 @@ I made this entire website in Visual Studio Code, so if you wish to use that edi
 - Node.js
 - npm or yarn (I used yarn for this project)
 - Visual Studio Code (optional)
+- [NASA API key](https://api.nasa.gov) (required to enable the easter egg functionality)
 
 ### Steps for setting up development environment
+- Make sure you have obtained a NASA API key for free from [api.nasa.gov](https://api.nasa.gov) and updated `.env.example` with your key.
+- Rename `.env.example` to `.env` if you haven't done so already.
 - Run `yarn install` or `npm install` depending on which package manager you prefer to use. (This repository comes with a yarn.lock so I recommend using yarn)
 - Run `yarn start` or `npm run start` to get a live-reloading development server on port 3000 by default. This command will also open the webpage in your default web browser automatically.
 

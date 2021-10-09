@@ -20,13 +20,11 @@ const NotFoundPage = () => {
             <h1>404 Not Found</h1>
             <hr/>
             <p>Sorry, looks like you're trying to access a page that does not exist or was removed. But don't be sad, here's a little kitty cat to cheer you up! :D</p>
-            <img src="./404cat.webp" alt="404 Not Found" width="400" height="400"/>
+            <p>Click on the cat to pet it!</p>
+            <a href="#meow" onClick={petTheKitty}><img id="meow" src="./404cat.webp" alt="404 Not Found" width="400" height="400"/></a>
             <br/>
             <br/>
-            <p>The cat has been petted <b>{petCounter}</b> times.</p>
-            <Button variant="primary" onClick={petTheKitty}>Pet the kitty</Button>
-            <br/>
-            <br/>
+            <p>So far, the cat has been petted <b>{petCounter}</b> times by visitors like you!</p>
             <Button variant="dark" href="/">Go home</Button>
         </Container>
     )

@@ -19,7 +19,10 @@ Name: https://www.npmjs.com/package/react-carbonbadge
 Name: https://www.npmjs.com/package/downloadjs
 Name: https://www.npmjs.com/package/react-google-recaptcha
 Name: https://www.npmjs.com/package/react-pdf
+Name: https://npmjs.com/package/react-konami-code
 Name: https://ui.dev/react-router-v5-animated-transitions/
+Name: https://api.nasa.gov
+Name: https://scotch.io/tutorials/make-a-stellar-react-nasa-app-in-10-minutes#toc-nasa-apod-component
 Name: https://lanyard.rest
 Name: https://dont-ping.me
 Name: https://github.com/punctuations/home
@@ -28,7 +31,7 @@ Name: https://cloudflare.com
 /* SITE */
 Last update: 2021/10/08
 Standards: HTML5, CSS3, JS
-Components: React.js, webpack, react-router-dom, react-bootstrap, @formspree/react, countapi-js, downloadjs, react-carbonbadge, react-cookie-consent, react-google-recaptcha, react-pdf
-Software: Node.js v0.0.0, yarn v0.0.0, Windows 11 v000, Visual Studio Code, Git, Gpg4win
+Components: React.js, webpack, react-router-dom, react-bootstrap, @formspree/react, countapi-js, downloadjs, react-carbonbadge, react-cookie-consent, react-google-recaptcha, react-pdf, react-konami-code
+Software: Node.js v16.9.1, yarn v1.22.11, Windows 11 version 21H2 build 22000.194, Visual Studio Code, Git, Gpg4win
 Main language: en_US
 Doctype: HTML

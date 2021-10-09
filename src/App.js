@@ -1,9 +1,10 @@
 import { Switch, Route, Link, Redirect, useLocation } from 'react-router-dom';
 
 // import components
-import { Navbar, Nav, Container, Button, Alert } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button, Alert, Image } from 'react-bootstrap';
 import Page from './Page';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import CookieConsent from 'react-cookie-consent';
 
 // import styles
 import './styles/main.css';
@@ -16,7 +17,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
 import NotFoundPage from './pages/NotFoundPage';
 
-import CookieConsent from 'react-cookie-consent';
+import Egg from './components/Egg';
 
 function App() {
   const location = useLocation();
@@ -25,18 +26,20 @@ function App() {
     <>
       {
         is_debug &&
-        <Alert variant="danger"><Alert.Heading>Debug Mode</Alert.Heading>This is a <b>debug</b> build and should not be run in a production environment.</Alert>
+        <Alert variant="danger" dismissible="true"><Alert.Heading>You are in debug mode</Alert.Heading>This is a <b>debug</b> build and should not be run in a production environment. Some features may not work until deployed to production, and other features may be unstable and cause errors and/or crashes.</Alert>
       }
       <Container fluid>
       <Navbar expand="lg">
         <Container>
-            <Navbar.Brand href="/" className="txt-white">Sanel Kukic</Navbar.Brand>
+            <Navbar.Brand href="/" className="txt-white">
+              <Image alt="My profile picture" src="./profile_picture.png" height={30} width={30} roundedCircle/>{' '} Sanel Kukic
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse>
               <Nav className="me-auto">
                 <Nav.Link as={Link} to="/" className="txt-white">Home</Nav.Link>
                 <Nav.Link as={Link} to="/projects" className="txt-white">Projects</Nav.Link>
-                <Nav.Link as={Link} to="/resume" className="txt-white">Resume</Nav.Link>
+                <Nav.Link as={Link} to="/resume" className="txt-white">Résumé</Nav.Link>
                 <Nav.Link href="https://tools.sanelkukic.us.eu.org" className="txt-white">Tools</Nav.Link>
                 <Nav.Link href="https://cats.sanelkukic.us.eu.org" className="txt-white">Cats</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className="txt-white">Contact Me</Nav.Link>
@@ -46,6 +49,7 @@ function App() {
           </Container>
         </Navbar>
       </Container>
+      <Egg/>
       <TransitionGroup>
         <CSSTransition timeout={300} classNames="fade" key={location.key}>
           <Switch location={location}>
@@ -83,7 +87,7 @@ function App() {
               </Page>
             )}/>
             <Route exact path="/resume" render={(props) => (
-              <Page title="Resume">
+              <Page title="Résumé">
                 <ResumePage {...props}/>
               </Page>
             )}/>

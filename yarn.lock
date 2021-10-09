@@ -9417,6 +9417,13 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
+react-konami-code@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/react-konami-code/-/react-konami-code-2.2.2.tgz#cf42af47bdc3fe3ffefce6333ea881026936f429"
+  integrity sha512-TTrdZqA25WItE6Pk6bjoIu/YKjQ6aRmk70TIqGb/tmj2tiYYcKTeDutcnikYJcX3RPsUW7CHFULq2T4svbFc+A==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
