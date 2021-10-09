@@ -1,20 +1,13 @@
 import React, { useState, useEffect} from 'react';
 import { Card, Button } from 'react-bootstrap';
 
-var apiKey;
-if (process.env.NODE_ENV === 'production' || (process.env.REACT_APP_NASA_API_KEY === undefined)) {
-    apiKey = process.env.CF_PAGES_NASA_API_KEY;
-} else {
-    apiKey = process.env.REACT_APP_NASA_API_KEY;
-}
-
 const NASAPhoto = () => {
     const [photoData, setPhotoData] = useState(null);
     useEffect(() => {
         fetchPhoto();
 
         async function fetchPhoto() {
-            const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${apiKey}&thumbs=bool`);
+            const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&thumbs=bool`);
             const data = await res.json();
             setPhotoData(data);
         }
