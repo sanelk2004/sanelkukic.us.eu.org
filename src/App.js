@@ -16,6 +16,8 @@ import SupportPage from './pages/SupportPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ResumePage from './pages/ResumePage';
 import NotFoundPage from './pages/NotFoundPage';
+import TermsPage from './pages/TermsPage';
+import PrivacyPage from './pages/PrivacyPage';
 
 import Egg from './components/Egg';
 
@@ -71,6 +73,15 @@ function App() {
             <Route exact path="/portfolio">
               <Redirect to="/projects"/>
             </Route>
+            <Route exact path="/terms-of-service">
+              <Redirect to="/terms"/>
+            </Route>
+            <Route exact path="/tos">
+              <Redirect to="/terms"/>
+            </Route>
+            <Route exact path="/privacy-policy">
+              <Redirect to="/privacy"/>
+            </Route>
             <Route exact path="/projects" render={(props) => (
               <Page title="Projects">
                 <ProjectsPage {...props}/>
@@ -89,6 +100,16 @@ function App() {
             <Route exact path="/resume" render={(props) => (
               <Page title="Résumé">
                 <ResumePage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/terms" render={(props) => (
+              <Page title="Terms and Conditions of Service">
+                <TermsPage {...props}/>
+              </Page>
+            )}/>
+            <Route exact path="/privacy" render={(props) => (
+              <Page title="Privacy Policy">
+                <PrivacyPage {...props}/>
               </Page>
             )}/>
             <Route exact path="/" render={(props) => (

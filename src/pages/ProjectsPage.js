@@ -18,6 +18,13 @@ const ProjectsPage = () => {
                 </thead>
                 <tbody>
                     <tr>
+                        <td>kBot</td>
+                        <td>A unique Discord bot that does things that no other bot can do.</td>
+                        <td>✅ Yes</td>
+                        <td>JavaScript (Node.js)</td>
+                        <td><Button variant="info" href="https://github.com/sanelk2004/kBot">View on GitHub</Button></td>
+                    </tr>
+                    <tr>
                         <td>ASH-AIO 2</td>
                         <td>ASH-AIO 2 is an open-source modification client for the Nintendo Wii U game Splatoon.</td>
                         <td>❌ No</td>
