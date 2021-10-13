@@ -3,7 +3,7 @@ import { Container, Tab, Tabs, Button, Modal, Alert } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faMastodon, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faKey, faComments, faMobileAlt, faCommentDots, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faKey, faComments, faMobileAlt, faCommentDots, faPaperPlane, faComment } from '@fortawesome/free-solid-svg-icons';
 import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
@@ -157,6 +157,14 @@ sPBaBwqxr0Zjx8jP1ArYKj3ziEYi7kQ=
                         <li>My own XMPP chatroom: <a href="xmpp:sanel.kukic@conference.og.im?join">sanel.kukic@conference.og.im</a></li>
                     </ul>
                     <p>Feel free to use <abbr title="OMEMO Multi-End Message and Object Encryption">OMEMO</abbr> or <abbr title="Off-the-Record">OTR</abbr> encryption if you wish to do so.</p>
+                </Tab>
+                <Tab tabClassName="custom-tabs-color" eventKey="irc" title={<React.Fragment><FontAwesomeIcon icon={faComment}/> IRC</React.Fragment>}>
+                    <p>You can use IRC to reach me in real-time as well!</p>
+                    <ul>
+                        <li><a href="irc://irc.tilde.chat:6697/sanelkukic,isnick">sanelkukic on tilde.chat</a></li>
+                        <li>You can often find me hanging out in the <a href="irc://irc.tilde.chat:6697/%23envs">#envs</a> room and the <a href="irc://irc.tilde.chat:6697/%23meta">#meta</a> room, but feel free to message me directly!</li>
+                    </ul>
+                    <p>If you wish, you can also use something like <a href="https://kiwiirc.com" target="_blank" rel="noreferrer">KiwiIRC</a> to connect to the IRC server in your browser.</p>
                 </Tab>
                 <Tab tabClassName="custom-tabs-color" eventKey="matrix" title={<React.Fragment><FontAwesomeIcon icon={faCommentDots}/> Matrix</React.Fragment>}>
                     <ul>
