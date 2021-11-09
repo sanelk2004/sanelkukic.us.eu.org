@@ -19,6 +19,7 @@ Name: https://www.npmjs.com/package/react-carbonbadge
 Name: https://www.npmjs.com/package/downloadjs
 Name: https://www.npmjs.com/package/react-google-recaptcha
 Name: https://www.npmjs.com/package/react-pdf
+Name: https://www.npmjs.com/package/react-player
 Name: https://npmjs.com/package/react-konami-code
 Name: https://ui.dev/react-router-v5-animated-transitions/
 Name: https://api.nasa.gov
