@@ -25,6 +25,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-konami-code": "^2.2.2",
     "react-pdf": "^5.4.0",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "sass": "^1.42.1",
