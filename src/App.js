@@ -34,7 +34,7 @@ function App() {
       <Navbar expand="lg">
         <Container>
             <Navbar.Brand href="/" className="txt-white">
-              <Image alt="My profile picture" src="./profile_picture.png" height={30} width={30} roundedCircle/>{' '} Sanel Kukic
+              <Image alt="My profile picture" src="/profile_picture.png" height={30} width={30} roundedCircle/>{' '} Sanel Kukic
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse>
@@ -127,7 +127,7 @@ function App() {
       </TransitionGroup>
       <Container>
         <footer>
-          <p className="txt-white sticky-footer">Made with 💖 <a href="./humans.txt">by Sanel Kukic</a> All content &copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
+          <p className="txt-white sticky-footer">Made with 💖 <a href="/humans.txt">by Sanel Kukic</a> All content &copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
           <br/>
           <CookieConsent
             debug={is_debug}
