@@ -10,7 +10,7 @@ const NASAPhoto = () => {
         fetchPhoto();
 
         async function fetchPhoto() {
-            const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&thumbs=bool`);
+            const res = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.REACT_APP_NASA_API_KEY}&thumbs=true`);
             const data = await res.json();
             setPhotoData(data);
         }
