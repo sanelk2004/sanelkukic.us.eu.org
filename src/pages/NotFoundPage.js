@@ -8,12 +8,12 @@ const NotFoundPage = () => {
     const [petCounter, setPetCounter] = useState(0);
     const addPet = (newValue) => setPetCounter(newValue);
     useEffect(() => {
-        countapi.get("sanelkukic.us.eu.org", "notFoundCat").then((result) => {
+        countapi.get(process.env.REACT_APP_COUNTAPI_NAMESPACE, "notFoundCat").then((result) => {
             addPet(result.value);
         });
     });
     function petTheKitty() {
-        countapi.update("sanelkukic.us.eu.org", "notFoundCat", 1).then((result) => {
+        countapi.update(process.env.REACT_APP_COUNTAPI_NAMESPACE, "notFoundCat", 1).then((result) => {
             addPet(result.value);
         });
     }
