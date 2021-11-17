@@ -5,6 +5,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 import download from 'downloadjs';
+import config from '../config.json';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -21,7 +22,7 @@ const ResumePage = () => {
     }
 
     function downloadPDF() {
-        download("./sanel_resume.pdf");
+        download(config.resume);
     }
 
     // onClick handler functions that allow for simple pagination
@@ -49,13 +50,13 @@ const ResumePage = () => {
             <Button variant="dark" onClick={handleShow}>View my résumé <Badge pill bg="info">BETA</Badge></Button>
             <br/>
             <br/>
-            <Button variant="dark" href="https://linkedin.com/in/sanelkukic"><FontAwesomeIcon icon={faLinkedin}/> View my LinkedIn profile</Button>
+            <Button variant="dark" href={`https://linkedin.com/in/${config.socials.linkedin}`}><FontAwesomeIcon icon={faLinkedin}/> View my LinkedIn profile</Button>
             <Modal dialogClassName="pdf-modal" show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>View My Résumé <Badge pill bg="info">BETA</Badge></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Document file="./sanel_resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+                    <Document file={config.resume} onLoadSuccess={onDocumentLoadSuccess}>
                         <Page pageNumber={pageNumber}/>
                     </Document>
                     <p className="dark-text-color">Page {pageNumber} of {numPages}</p>

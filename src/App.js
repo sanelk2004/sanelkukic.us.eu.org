@@ -21,6 +21,8 @@ import PrivacyPage from './pages/PrivacyPage';
 
 import Egg from './components/Egg';
 
+import config from './config.json';
+
 function App() {
   const location = useLocation();
   const is_debug = process.env.NODE_ENV !== 'production';
@@ -34,7 +36,7 @@ function App() {
       <Navbar expand="lg">
         <Container>
             <Navbar.Brand href="/" className="txt-white">
-              <Image alt="My profile picture" src="/profile_picture.png" height={30} width={30} roundedCircle/>{' '} Sanel Kukic
+              <Image alt="My profile picture" src="/profile_picture.png" height={30} width={30} roundedCircle/>{' '} {process.env.REACT_APP_SITE_TITLE}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse>
@@ -42,8 +44,8 @@ function App() {
                 <Nav.Link as={Link} to="/" className="txt-white">Home</Nav.Link>
                 <Nav.Link as={Link} to="/projects" className="txt-white">Projects</Nav.Link>
                 <Nav.Link as={Link} to="/resume" className="txt-white">Résumé</Nav.Link>
-                <Nav.Link href="https://tools.sanelkukic.us.eu.org" className="txt-white">Tools</Nav.Link>
-                <Nav.Link href="https://cats.sanelkukic.us.eu.org" className="txt-white">Cats</Nav.Link>
+                <Nav.Link href={config.tools_site} className="txt-white">Tools</Nav.Link>
+                <Nav.Link href={config.cats_site} className="txt-white">Cats</Nav.Link>
                 <Nav.Link as={Link} to="/contact" className="txt-white">Contact Me</Nav.Link>
                 <Nav.Link as={Link} to="/support" className="txt-white">Support Me</Nav.Link>
               </Nav>
@@ -127,7 +129,7 @@ function App() {
       </TransitionGroup>
       <Container>
         <footer>
-          <p className="txt-white sticky-footer">Made with 💖 <a href="/humans.txt">by Sanel Kukic</a> All content &copy; {new Date().getFullYear()} Sanel Kukic. All rights reserved.</p>
+          <p className="txt-white sticky-footer">Made with 💖 <a href="/humans.txt">by {config.copyright_owner}</a> All content &copy; {new Date().getFullYear()} {config.copyright_owner}. All rights reserved.</p>
           <br/>
           <CookieConsent
             debug={is_debug}

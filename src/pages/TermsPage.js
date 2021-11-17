@@ -1,10 +1,11 @@
 import { Container } from 'react-bootstrap';
+import config from '../config.json';
 
 const TermsPage = () => {
     return (
         <Container className="mt-3">
             <h1>Terms and Conditions of Service</h1>
-            <p className="txt-white">Last updated: October 11, 2021</p>
+            <p className="txt-white">Last updated: {config.terms_of_service.last_updated}</p>
             <hr/>
             <p className="txt-white">Please read these terms and conditions carefully before using Our Service.</p>
             <h1>Interpretation and Definitions</h1>
@@ -17,10 +18,10 @@ const TermsPage = () => {
                     <p className="txt-white"><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other  securities entitled to vote for election of directors or other managing authority.</p>
                 </li>
                 <li>
-                    <p className="txt-white"><strong>Country</strong> refers to: Florida,  United States</p>
+                    <p className="txt-white"><strong>Country</strong> refers to: {config.terms_of_service.location}</p>
                 </li>
                 <li>
-                    <p className="txt-white"><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Sanel Kukic.</p>
+                    <p className="txt-white"><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to {config.terms_of_service.company_name}.</p>
                 </li>
                 <li>
                     <p className="txt-white"><strong>Device</strong> means any device that can access the Service such as a computer, a     cellphone or a digital tablet.</p>
@@ -35,7 +36,7 @@ const TermsPage = () => {
                     <p className="txt-white"><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
                 </li>
                 <li>
-                    <p className="txt-white"><strong>Website</strong> refers to Sanel Kukic, accessible from <a href="https://sanelkukic.us.eu.org" rel="external nofollow noopener noreferrer" target="_blank">https://sanelkukic.us.eu.org</a></p>
+                    <p className="txt-white"><strong>Website</strong> refers to {config.terms_of_service.company_name}, accessible from <a href={config.terms_of_service.website} rel="external nofollow noopener noreferrer" target="_blank">{config.terms_of_service.website}</a></p>
                 </li>
                 <li>
                     <p className="txt-white"><strong>You</strong> means the individual accessing or using the Service, or the company, or   other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -55,7 +56,7 @@ const TermsPage = () => {
             <p className="txt-white">We may terminate or suspend Your access immediately, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms and Conditions.</p>
             <p className="txt-white">Upon termination, Your right to use the Service will cease immediately.</p>
             <h1>Limitation of Liability</h1>
-            <p className="txt-white">Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 100 USD if You haven't purchased anything through the Service.</p>
+            <p className="txt-white">Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Terms and Your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You through the Service or 50 USD if You haven't purchased anything through the Service.</p>
             <p className="txt-white">To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Service, third-party software and/or third-party hardware used with the Service, or otherwise in connection with any provision of this Terms), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose.</p>
             <p className="txt-white">Some states do not allow the exclusion of implied warranties or limitation of liability for incidental or consequential damages, which means that some of the above limitations may not apply. In these states, each party's liability will be limited to the greatest extent permitted by law.</p>
             <h1>&quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer</h1>
@@ -85,10 +86,7 @@ const TermsPage = () => {
             <p className="txt-white">If you have any questions about these Terms and Conditions, You can contact us:</p>
             <ul>
                 <li>
-                    <p className="txt-white">By email: sanelk2004@icloud.com</p>
-                </li>
-                <li>
-                    <p className="txt-white">By visiting this page on our website: <a href="https://sanelkukic.us.eu.org/contact" rel="external     nofollow noopener noreferrer" target="_blank">https://sanelkukic.us.eu.org/contact</a></p>
+                    <p className="txt-white">By visiting this page on our website: <a href={config.terms_of_service.contact} rel="external     nofollow noopener noreferrer" target="_blank">{config.terms_of_service.contact}</a></p>
                 </li>
             </ul>
         </Container>

@@ -1,12 +1,13 @@
 import { Container } from 'react-bootstrap';
+import config from '../config.json';
 
 const PrivacyPage = () => {
     return (
         <Container className="mt-3">
             <h2>Privacy Policy</h2>
             <hr/>
-            <p className="txt-white">Your privacy is important to us. It is Sanel Kukic&#39;s policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, <a href="https://sanelkukic.us.eu.org">https://sanelkukic.us.eu.org</a>, and other sites we own and operate. </p>
-            <p className="txt-white">This policy is effective as of 11 October 2021 and was last updated on 11 October 2021. </p>
+            <p className="txt-white">Your privacy is important to us. It is {config.privacy_policy.company_name}&#39;s policy to respect your privacy and comply with any applicable law and regulation regarding any personal information we may collect about you, including across our website, {config.privacy_policy.website}, and other sites we own and operate. </p>
+            <p className="txt-white">This policy is effective as of {config.privacy_policy.effective_date} and was last updated on {config.privacy_policy.last_updated_date}. </p>
             <h3>Information We Collect</h3>
             <p className="txt-white">Information we collect includes both information you knowingly and actively provide us when using or participating in any of our services and promotions, and any information automatically sent by your devices in the course of accessing our products and services. </p>
             <h4 className="txt-white">Log Data</h4>
@@ -27,7 +28,6 @@ const PrivacyPage = () => {
                <li>Contact us via email, social media, or on any similar technologies</li>
                <li>When you mention us on social media</li>
             </ul>
-            <p className="txt-white">We may collect, hold, use, and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes: </p>
             <p className="txt-white">We may collect, hold, use, and disclose information for the following purposes, and personal information will not be further processed in a manner that is incompatible with these purposes: </p>
             <ul>
                <li>to contact and communicate with you</li>
@@ -71,8 +71,8 @@ const PrivacyPage = () => {
             <p className="txt-white">If required by law, we will get your permission or give you the opportunity to opt in to or opt out of, as applicable, any new uses of your personal information. </p>
             <h3>Contact Us</h3>
             <p className="txt-white">For any questions or concerns regarding your privacy, you may contact us using the following details: </p>
-            <p className="txt-white">Sanel Kukic<br />
-            <a href="https://sanelkukic.us.eu.org/contact">https://sanelkukic.us.eu.org/contact</a> </p>
+            <p className="txt-white">{config.privacy_policy.contact_name}<br />
+            <a href={config.privacy_policy.contact_details}>{config.privacy_policy.contact_details}</a> </p>
         </Container>
     )
 }

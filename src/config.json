@@ -1,0 +1,123 @@
+{
+  "projects": [
+    {
+      "name": "kBot",
+      "description": "A unique Discord bot that does things that no other bot can do",
+      "active": true,
+      "language": "JavaScript",
+      "url": "https://github.com/sanelk2004/kBot"
+    },
+    {
+      "name": "ASH-AIO 2",
+      "description": "ASH-AIO 2 is an open-source modification client for the game Splatoon",
+      "active": false,
+      "language": "C#",
+      "url": "https://github.com/ASHTeam/ash-aio-2"
+    },
+    {
+      "name": "SpamHook-Alpha",
+      "description": "The original version of my Discord webhook spammer, meant for trolling your friends!",
+      "active": false,
+      "language": "Python",
+      "url": "https://github.com/sanelk2004/SpamHook-Alpha"
+    },
+    {
+      "name": "OIBot",
+      "description": "A XMPP chatbot that forwards and decodes messages from the National Weather Service Weather Wire Service Open Interface (NWWS-OI)",
+      "active": true,
+      "language": "Python",
+      "url": "https://github.com/sanelk2004/oibot"
+    },
+    {
+      "name": "sphk",
+      "description": "sphk is the rewritten version of my Discord webhook spammer, this time with a cool GUI!",
+      "active": true,
+      "language": "C#",
+      "url": "https://github.com/sanelk2004/sphk"
+    },
+    {
+      "name": "sanelkukic.us.eu.org",
+      "description": "This website! I made it in React and host it on Cloudflare Pages!",
+      "active": true,
+      "language": "JavaScript",
+      "url": "https://github.com/sanelk2004/sanelkukic.us.eu.org"
+    },
+    {
+      "name": "cats.sanelkukic.us.eu.org",
+      "description": "A website made using Bootstrap that showcases randomly selected images of my two pet cats, Kitty & Mini!",
+      "active": true,
+      "language": "HTML",
+      "url": "https://github.com/sanelk2004/cats.sanelkukic.us.eu.org"
+    },
+    {
+      "name": "tools.sanelkukic.us.eu.org",
+      "description": "A website made using Bootstrap that has a few cool utilities on it",
+      "active": true,
+      "language": "HTML",
+      "url": "https://github.com/sanelk2004/tools.sanelkukic.us.eu.org"
+    }
+  ],
+  "heading": "Hi, I'm a software developer",
+  "description": "Hey there! Welcome to my website! My name is Sanel Kukic, I'm a 17 year old software developer from Florida. I like to code in JavaScript, Python, C#, and Java and I occasionally do web development every now and then. Why don't you go ahead and browse this site a little? :D",
+  "privacy_policy": {
+    "company_name": "Sanel Kukic",
+    "effective_date": "11 October 2021",
+    "last_updated_date": "11 October 2021",
+    "website": "https://sanelkukic.us.eu.org",
+    "contact_name": "Sanel Kukic",
+    "contact_details": "https://sanelkukic.us.eu.org/contact"
+  },
+  "terms_of_service": {
+    "last_updated": "11 October 2021",
+    "location": "Florida, United States of America",
+    "company_name": "Sanel Kukic",
+    "website": "https://sanelkukic.us.eu.org",
+    "contact": "https://sanelkukic.us.eu.org/contact"
+  },
+  "resume": "./sanel_resume.pdf",
+  "tools_site": "https://tools.sanelkukic.us.eu.org",
+  "cats_site": "https://cats.sanelkukic.us.eu.org",
+  "copyright_owner": "Sanel Kukic",
+  "support": {
+    "liberapay": "sanelkukic",
+    "bmac": "sanelkukic"
+  },
+  "socials": {
+    "instagram": "sanelk2004",
+    "mastodon": {
+      "username": "sanelkukic",
+      "server": "im-in.space"
+    },
+    "twitter": "idkhow_to_read",
+    "hacker_news": "sanelkukic",
+    "github": "sanelk2004",
+    "linkedin": "sanelkukic",
+    "discord": {
+      "user_id": "588852269177372685",
+      "server_id": "883556672679862283",
+      "server_invite": "NSVPhwn9rG"
+    },
+    "steam": "idk_how_to_read",
+    "dev": "sanelk2004",
+    "reddit": "idkhow_to_read",
+    "irc": {
+      "irc_server": "irc.tilde.chat:6697",
+      "irc_user": "sanelkukic",
+      "irc_room": "envs"
+    },
+    "xmpp": {
+      "xmpp_user": "ksanel@og.im",
+      "xmpp_room": "sanel.kukic@conference.og.im"
+    },
+    "matrix": {
+      "matrix_user": "@sanel.k:halogen.city",
+      "matrix_room": "#sanel.kukic:halogen.city"
+    },
+    "emails": [
+      "sanelk2004@icloud.com",
+      "sk@sanelkukic.us.eu.org"
+    ],
+    "pgp_key": "-----BEGIN PGP PUBLIC KEY BLOCK-----\n\n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\nsPBaBwqxr0Zjx8jP1ArYKj3ziEYi7kQ=\n=JrpQ\n-----END PGP PUBLIC KEY BLOCK-----",
+    "pgp_key_email": "sanelk2004@icloud.com"
+  }
+}
