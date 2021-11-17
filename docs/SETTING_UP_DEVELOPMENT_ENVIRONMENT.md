@@ -42,6 +42,8 @@ The QuickLink is effectively an invisible link that you put on your website to c
 
 You should store your QuickLink in the `.env` file in order to make it work with my website.
 
+If you want, you can also store your Project Honeypot referral link in `config.json`.
+
 Bots that visit the link will be publicly recorded in the honeypot and will not be able to access your website.
 
 ## Count API namespaces

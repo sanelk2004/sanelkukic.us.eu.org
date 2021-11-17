@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Container } from 'react-bootstrap';
+import { Container, Image, Row, Col } from 'react-bootstrap';
 import config from '../config.json';
 
 // import font awesome icons
@@ -32,7 +32,12 @@ const HomePage = (props) => {
             <a href={`https://discord.gg/${config.socials.discord.server_invite}`} target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDiscord}/></a>
             <a href={`https://dev.to/${config.socials.dev}`} target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faDev}/></a>
             <a href={`https://reddit.com/u/${config.socials.reddit}`} target="_blank" rel="noreferrer"><FontAwesomeIcon size="2x" icon={faReddit}/></a>
-            <Carbonbadge darkMode={false}/>
+            <br/>
+            <br/>
+            <Row className="justify-content-md-end">
+                <Col><Carbonbadge darkMode={false}/></Col>
+                <Col><a href={config.project_honeypot_referral_url} target="_blank" rel="noreferrer"><Image src="./project_hp.jpg" height="60px" width="468px" border="0" alt="Stop Spam Harvesters, Join Project Honey Pot"></Image></a></Col>
+            </Row>
         </Container>
     )
 }
