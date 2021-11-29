@@ -1,20 +1,7 @@
-# sanelkukic.us.eu.org v2
-Version 2.0 rewrite of my personal website made using React.js, react-bootstrap, and react-router-dom!
+# We've moved!
 
-# View the live version
-You can access my website through any of the following URLs:
-- [sanelkukic.us.eu.org](https://sanelkukic.us.eu.org)
-- [sanelkukic.is-a.dev](https://sanelkukic.is-a.dev)
+**My website's source code has moved to Bitbucket, and no longer uses GitHub.** I am also in the process of moving `cats.sanelkukic.us.eu.org` and `tools.sanelkukic.us.eu.org` to Bitbucket as well.
 
-# What technologies does this use?
-- React.js
-- `react-bootstrap`
-- `react-router-dom`
-- A bunch of React libraries and components
-- Cloudflare Pages for static web hosting
+Any pull requests or issues must be directed at the Bitbucket repository. This repository will no longer be used and only serves as a redirection placeholder as of now.
 
-#  Setting up a development environment
-If you wish to set up a development environment to test this website locally, or to contribute code, check out the [documentation](./docs/SETTING_UP_DEVELOPMENT_ENVIRONMENT.md)
-
-# License
-The code in this repository is licensed under the terms of the MIT license. You can find the full license text in the [LICENSE.txt](./LICENSE.txt) file in this repository.
+## [Click here](https://bitbucket.org/sanelk2004/sanelkukic.us.eu.org) to view the source code on Bitbucket
